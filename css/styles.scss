@@ -1,19 +1,24 @@
 @import "variables",
         "header",
+        "nav",
         "main-page",
         "footer";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto+Condensed:wght@400;700&display=swap');
 
 html { box-sizing: border-box; }
 *, :after, :before { box-sizing: inherit; }
 
 body {
   margin: 0;
+  font-family: $font-text;
+  color: $color-dark;
 }
 
-.app {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/images/skolka-uvnitr-2.jpg);
+.container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/images/skolka-venku.jpg);
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: right top;
   background-size: cover;
   height: 100vh; // pak dát pryč
 }

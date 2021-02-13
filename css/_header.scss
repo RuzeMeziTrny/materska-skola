@@ -1,3 +1,64 @@
-.logo {
+.header {
+  background: #fff;
+  display: grid;
+  grid-template-columns: 120px 1fr 1fr 240px;
+  justify-items: center;
+  height: 120px;
+}
+
+.logo-link {
   width: 100px;
+  margin: auto;
+  grid-column: 1 / 2;
+}
+
+.logo {
+  width: 100%;
+}
+
+.char-img {
+  grid-column: 2 / 4;
+  
+  img {
+    height: 120px;
+    padding: 1.2em 1em;
+  }
+}
+
+.header-info {
+  grid-column: 4 / 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0.5em;
+
+  &__icon {
+    width: 24px;
+    // šlo by přebarvit svg loga na primární barvu?
+  }
+
+  &__icon--lower {
+    transform: translateY(25%);
+  }
+
+  &__email {
+    color: $color-dark;
+    margin: 0.5em;
+
+    &:hover,
+    &:focus {
+      color: $color-primary-dark;
+    }
+  }
+
+  &__address {
+    margin: 0.5em;
+    display: inline-block;
+  }
+
+  &__search {
+    margin: 0.5em;
+    width: 182px;
+    transform: translateY(-30%);
+  }
 }
