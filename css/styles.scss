@@ -18,7 +18,7 @@ body {
 .container {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/images/skolka-venku.jpg);
   background-repeat: no-repeat;
-  background-position: right top;
+  background-position: right center;
   background-size: cover;
-  height: 200vh; // pak dát pryč
+  min-height: 100vh; // pak dát pryč
 }
