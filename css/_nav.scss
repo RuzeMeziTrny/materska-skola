@@ -1,0 +1,28 @@
+.nav {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.navbar {
+  background-color: $color-primary;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $font-headings;
+    font-weight: 700;
+    color: $color-light;
+    padding: 1em 2em;
+
+    &:hover {
+      background-color: $color-primary-dark;
+    }
+  }
+}
