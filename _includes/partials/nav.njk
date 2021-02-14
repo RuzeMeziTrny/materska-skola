@@ -1,25 +1,38 @@
-<nav class="nav">
-  <ul class="navbar">
-    <li class="navbar__item">
-      <a class="navbar__link" href="#">Aktuality</a>
+<nav>
+  <ul class="nav">
+    <li><a class="nav__link" href="#">Aktuality</a></li>
+    <li class="nav__item">
+      <a class="nav__link" id="nav__link--kindergarten" href="#">O školce</a> <!-- tenhle link povede na 1. položku z podnabídky -->
+      <ul class="sub-nav dn" id="sub-nav--kindergarten">
+        <li><a href="#" class="sub-nav__link">Koncepce školky</a></li>
+        <li><a href="#" class="sub-nav__link">Zájmové zaměření</a></li>
+        <li><a href="#" class="sub-nav__link">Jak to u nás vypadá</a></li>
+        <li><a href="#" class="sub-nav__link">Režim dne</a></li>
+        <li><a href="#" class="sub-nav__link">Školní vzdělávací program</a></li>
+        <li><a href="#" class="sub-nav__link">Úřední dokumenty</a></li>
+      </ul>
     </li>
-    <li class="navbar__item">
-      <a class="navbar__link" href="#">O škole</a> <!-- při mouseenter se zobrazí podnabídka; tenhle link buď nikam nepovede nebo povede na první položku z podnabídky -->
+    <li class="nav__item">
+      <a class="nav__link" id="nav__link--parents" href="#">Pro rodiče</a> <!-- tenhle link povede na 1. položku z podnabídky -->
+      <ul class="sub-nav dn" id="sub-nav--parents">
+        <li><a href="#" class="sub-nav__link">Zápis</a></li>
+        <li><a href="#" class="sub-nav__link">Oblečení do MŠ</a></li>
+        <li><a href="#" class="sub-nav__link">Rady rodičům</a></li>
+        <li><a href="#" class="sub-nav__link">Akce pro rodiče</a></li>
+        <li><a href="#" class="sub-nav__link">Platby</a></li>
+      </ul>
     </li>
-    <li class="navbar__item">
-      <a class="navbar__link" href="#">Zápis</a>
+    <li><a class="nav__link" href="#">Jídelníček</a></li>
+    <li class="nav__item">
+      <a class="nav__link" id="nav__link--classes" href="#">Třídy</a> <!-- tenhle link povede na přehled tříd (Horolezecká) -->
+      <ul class="sub-nav dn" id="sub-nav--classes">
+        <li><a href="#" class="sub-nav__link">Broučci</a></li>
+        <li><a href="#" class="sub-nav__link">Cvrček</a></li>
+        <li><a href="#" class="sub-nav__link">Krteček</a></li>
+        <li><a href="#" class="sub-nav__link">Maková panenka</a></li>
+        <li><a href="#" class="sub-nav__link">Rákosníček</a></li>
+      </ul>
     </li>
-    <li class="navbar__item">
-      <a class="navbar__link" href="#">Jídelníček</a>
-    </li>
-    <li class="navbar__item">
-      <a class="navbar__link" href="#">Třídy</a> <!-- při mouseenter se zobrazí podnabídka; tenhle link buď nikam nepovede nebo povede na první položku z podnabídky -->
-    </li>
-    <li class="navbar__item">
-      <a class="navbar__link" href="#">Panorama</a>
-    </li>
-    <li class="navbar__item">
-      <a class="navbar__link" href="#">Kontakty</a>
-    </li>
+    <li><a class="nav__link" href="#">Kontakty</a></li>
   </ul>
 </nav>
