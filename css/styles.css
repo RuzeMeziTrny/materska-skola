@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto+Condensed:wght@400;700&display=swap");
 .header {
-  background: #fff;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 120px 1fr 1fr 240px;
@@ -143,7 +142,6 @@ nav {
 
 .main {
   padding: 1em 2em;
-  background-color: #fff;
   text-align: justify;
   line-height: 1.5;
 }
@@ -185,6 +183,9 @@ h2 {
       grid-template-rows: repeat(3, 1fr);
   grid-gap: 0.5em;
   justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .news-meal__icon-link {
