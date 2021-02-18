@@ -8,26 +8,27 @@
       width: 32%;
       float: left;
       margin-right: 1em;
-    }
-
-    &--right-h {
-      height: 236px;
-      margin-left: 2em;
-    }
-
-    &--right-w {
-      height: 190px;
-      margin-left: 2em;
-    }
+   }
   }
 
-  &__groups {
+  &__gallery {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
 
-    ul {
-      margin: 0;
+    &-item {
+      width: 24%;
+      overflow: hidden;
     }
-  }
 
+    img {
+      width: 100%;
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+        // vyřešit, že se element zvětšuje směrem dolů
+      }
+    }
+
+  }
 }
