@@ -29,6 +29,22 @@
         // vyřešit, že se element zvětšuje směrem dolů
       }
     }
+  }
+}
 
+.day-mode {
+
+  &__section {
+    margin-top: 2em;
+  }
+
+  &__table th {
+    width: 120px;
+    text-align: center;
+    vertical-align: top;
+  }
+
+  &__list {
+    margin-top: 0;
   }
 }
