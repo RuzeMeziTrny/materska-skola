@@ -48,3 +48,64 @@
     margin-top: 0;
   }
 }
+
+.svp {
+
+  &__table {
+
+    margin-bottom: 2em;
+
+    th, 
+    td {
+      border: 1px solid $color-dark;
+      padding: 0.5em;
+      text-align: center;
+      width: 16%;
+      height: 64px;
+    }
+
+    tbody {
+      tr:nth-child(1) {
+        background-color: $color-primary-light;
+      }
+      tr:nth-child(2) {
+        background-color: hsl(30, 70%, 40%);
+        color: $color-light;
+      }
+      tr:nth-child(3) {
+        background-color: hsl(30, 70%, 25%);
+        color: $color-light;
+      }
+      tr:nth-child(4) {
+        background-color: hsl(210, 70%, 25%);
+        color: $color-light;
+      }
+      tr:nth-child(5) {
+        background-color: hsl(210, 70%, 40%);
+        color: $color-light;
+      }
+      tr:nth-child(6) {
+        background-color: hsl(210, 70%, 60%);
+      }
+      tr:nth-child(7) {
+        background-color: hsl(180, 70%, 70%);
+      }
+      tr:nth-child(8) {
+        background-color: hsl(90, 70%, 70%);
+      }
+      tr:nth-child(9) {
+        background-color: hsl(60, 100%, 75%);
+      }
+      tr:nth-child(10) {
+        background-color: $color-primary-light;
+      }
+    }
+  }
+
+  &__logos {
+    width: 60%;
+    margin: 1em 20%;
+  }
+}
+
+/* nejsou ty barvy moc bláznivé? */

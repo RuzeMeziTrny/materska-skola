@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto+Condensed:wght@400;700&display=swap");
 .header {
   display: -ms-grid;
@@ -275,6 +276,69 @@ nav {
   margin-top: 0;
 }
 
+.svp__table {
+  margin-bottom: 2em;
+}
+
+.svp__table th,
+.svp__table td {
+  border: 1px solid #333333;
+  padding: 0.5em;
+  text-align: center;
+  width: 16%;
+  height: 64px;
+}
+
+.svp__table tbody tr:nth-child(1) {
+  background-color: #ffb366;
+}
+
+.svp__table tbody tr:nth-child(2) {
+  background-color: #ad661f;
+  color: #e6e6e6;
+}
+
+.svp__table tbody tr:nth-child(3) {
+  background-color: #6c4013;
+  color: #e6e6e6;
+}
+
+.svp__table tbody tr:nth-child(4) {
+  background-color: #13406c;
+  color: #e6e6e6;
+}
+
+.svp__table tbody tr:nth-child(5) {
+  background-color: #1f66ad;
+  color: #e6e6e6;
+}
+
+.svp__table tbody tr:nth-child(6) {
+  background-color: #5299e0;
+}
+
+.svp__table tbody tr:nth-child(7) {
+  background-color: #7de8e8;
+}
+
+.svp__table tbody tr:nth-child(8) {
+  background-color: #b3e87d;
+}
+
+.svp__table tbody tr:nth-child(9) {
+  background-color: #ffff80;
+}
+
+.svp__table tbody tr:nth-child(10) {
+  background-color: #ffb366;
+}
+
+.svp__logos {
+  width: 60%;
+  margin: 1em 20%;
+}
+
+/* nejsou ty barvy moc bláznivé? */
 .footer {
   background-color: #ff9933;
 }
