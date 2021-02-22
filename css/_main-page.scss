@@ -2,10 +2,7 @@
   padding: 1em 2em;
   text-align: justify;
   line-height: 1.5;
-
-  &--home {
-    min-height: 70vh;
-  }
+  min-height: 70vh;
 }
 
 .about-us__image {
@@ -49,11 +46,6 @@
   &__link {
     grid-column: 1 / 5;
     grid-row: 3 / 4;
-    color: $color-primary;
-    font-weight: 600;
-
-    &:hover {
-      color: $color-primary-dark;
-    }
+    //font-weight: 600;
   }
 }

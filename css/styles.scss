@@ -3,6 +3,7 @@
         "nav",
         "main-page",
         "about-school",
+        "for-parents",
         "footer";
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto+Condensed:wght@400;700&display=swap');
@@ -36,4 +37,13 @@ h3 {
   font-size: 1.1em;
   color: $color-dark;
   margin-bottom: 0;
+}
+
+/* generic styles for links */
+a {
+  color: $color-primary;
+
+  &:hover {
+    color: $color-primary-dark;
+  }
 }

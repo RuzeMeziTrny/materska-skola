@@ -52,7 +52,6 @@
 .svp {
 
   &__table {
-
     margin-bottom: 2em;
 
     th, 
@@ -126,14 +125,6 @@
   &__gdpr {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-  }
-
-  a {
-    color: $color-primary;
-
-    &:hover {
-      color: $color-primary-dark;
-    }
   }
 
   &__info {

@@ -1,0 +1,26 @@
+.enrolment {
+  &__link {
+    display: block;
+  }
+
+  &__holidays {
+
+    padding-top: 1em;
+
+    table,
+    th,
+    td {
+      border: 1px solid $color-dark;
+      border-collapse: collapse;
+      padding: 0 0.5em;
+    }
+
+    &--relevant {
+      background-color: $color-primary-light;
+    }
+
+    &--important {
+      font-weight: 600;
+    }
+  }
+}

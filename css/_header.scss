@@ -42,11 +42,6 @@
   &__email {
     color: $color-dark;
     margin: 0.5em;
-
-    &:hover,
-    &:focus {
-      color: $color-primary-dark;
-    }
   }
 
   &__address {
