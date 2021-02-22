@@ -426,6 +426,14 @@ nav {
   font-weight: 600;
 }
 
+.payment table,
+.payment th,
+.payment td {
+  border: 1px solid #333333;
+  border-collapse: collapse;
+  padding: 0 0.5em;
+}
+
 .footer {
   background-color: #ff9933;
 }
