@@ -23,7 +23,7 @@
     grid-template-columns: 24px repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr );
     grid-gap: 0.5em;
-    justify-items: center;
+    //justify-items: center; (dokud není obsah, pak odkomentovat)
     align-items: center;
   }
 
