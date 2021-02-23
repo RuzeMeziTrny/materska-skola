@@ -434,6 +434,60 @@ nav {
   padding: 0 0.5em;
 }
 
+.contact {
+  text-align: center;
+}
+
+.contact__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 3em;
+}
+
+.contact__class {
+  width: 180px;
+  -webkit-box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
+  padding: 0.5em;
+}
+
+.contact__icon {
+  width: 24px;
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
+}
+
+.contact__link {
+  color: #333333;
+}
+
+.contact__image {
+  height: 100px;
+  display: block;
+  margin: 0.5em auto;
+}
+
+.contact__sub-heading {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.contact__staff {
+  margin: 0;
+}
+
+.contact iframe {
+  padding: 1em 0;
+}
+
+.mt {
+  margin-top: 1em;
+}
+
 .footer {
   background-color: #ff9933;
 }
@@ -489,5 +543,10 @@ a {
 
 a:hover {
   color: #ff8000;
+}
+
+/* generic styles for iframes */
+iframe {
+  border: none;
 }
 /*# sourceMappingURL=styles.css.map */
