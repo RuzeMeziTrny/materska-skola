@@ -2,9 +2,12 @@
         "header",
         "nav",
         "main-page",
+        "news",
         "about-school",
         "for-parents",
-        "contacts",
+        "meal",
+        "classes",
+        "contact",
         "footer";
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto+Condensed:wght@400;700&display=swap');
@@ -18,7 +21,7 @@ body {
   color: $color-dark;
 }
 
-/* generic styles for headings */
+/* ---------- generic styles for headings ---------- */
 
 h1 {
   font-family: $font-headings;
@@ -40,7 +43,7 @@ h3 {
   margin-bottom: 0;
 }
 
-/* generic styles for links */
+/* ---------- generic styles for links ---------- */
 
 a {
   color: $color-primary;
@@ -50,7 +53,8 @@ a {
   }
 }
 
-/* generic styles for iframes */
+/* ---------- generic styles for iframes ---------- */
+
 iframe {
   border: none;
 }
