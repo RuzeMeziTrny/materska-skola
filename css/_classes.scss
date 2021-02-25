@@ -1,0 +1,22 @@
+.classes {
+  &__links {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  a {
+    @include shadow-box;
+  }
+
+  &__images {
+    width: 100%;
+  }
+
+  &__names {
+    color: $color-dark;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none; // nefunguje -> proč?
+    text-align: center;
+  }
+}
