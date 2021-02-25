@@ -6,6 +6,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('css');
   // Zkopírovat `docs/` to `_site/docs/`
   eleventyConfig.addPassthroughCopy('docs');
+  // Zkopírovat `docs-classes/` to `_site/docs-classes/`
+  eleventyConfig.addPassthroughCopy('docs-classes');
   // Zkopírovat `js/` to `_site/js/`
   eleventyConfig.addPassthroughCopy('js');
 };
