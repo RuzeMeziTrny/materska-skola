@@ -614,6 +614,23 @@ nav {
   text-align: center;
 }
 
+.class__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.class__image {
+  width: 60px;
+  margin: 0.5em;
+}
+
 .contact {
   text-align: center;
 }
