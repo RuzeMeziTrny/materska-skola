@@ -9,7 +9,10 @@
       <h1>Krteček</h1>
     </div>
 
-    {{ content | safe }}
+    <div class="class__content">
+      {{ content | safe }}
+      {% include "partials/locked.njk" %}
+    </div>
     
   </section>
 
