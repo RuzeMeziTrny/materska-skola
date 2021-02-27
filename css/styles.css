@@ -690,6 +690,19 @@ nav {
   cursor: pointer;
 }
 
+.password-button:hover {
+  background-color: #ff9933;
+}
+
+.password-button-link {
+  color: #333333;
+  text-decoration: none;
+}
+
+.password-button-link:hover {
+  color: #333333;
+}
+
 .contact {
   text-align: center;
 }
