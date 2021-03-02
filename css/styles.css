@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* ---------- variables ---------- */
 /* ---------- mixins ---------- */
+/* ---------- styles for header (school logo, classes images, contact details) ---------- */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto+Condensed:wght@400;700&display=swap");
 .header {
   display: -ms-grid;
@@ -8,15 +9,11 @@
   -ms-grid-columns: 120px 1fr 1fr 240px;
       grid-template-columns: 120px 1fr 1fr 240px;
   justify-items: center;
-  height: 120px;
 }
 
 .logo-link {
   width: 100px;
   margin: auto;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 / 2;
 }
 
 .logo {
@@ -40,13 +37,10 @@
 }
 
 .char-img img {
-  height: 88px;
+  width: 100px;
 }
 
 .contact-details {
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 1;
-  grid-column: 4 / 5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,28 +53,21 @@
           justify-content: space-evenly;
 }
 
-.contact-details__icon {
-  width: 24px;
-  -webkit-transform: translateY(25%);
-          transform: translateY(25%);
-}
-
 .contact-details__email {
   color: #333333;
-  margin: 0.5em;
+  padding: 0.5em;
 }
 
 .contact-details__address {
-  display: inline-block;
-  margin: 0.5em;
+  display: inline;
+  padding: 0.5em;
 }
 
+/* ---------- styles for navigation bar ---------- */
 nav {
   position: -webkit-sticky;
-  /* Safari */
   position: sticky;
   top: 0;
-  z-index: 1;
 }
 
 .nav {
@@ -102,51 +89,48 @@ nav {
   text-transform: uppercase;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
-  color: #e6e6e6;
+  color: white;
   padding: 1em 2em;
 }
 
 .nav__link:hover {
-  color: #e6e6e6;
+  text-decoration: none;
+  color: white;
   background-color: #ff8000;
 }
 
+/* ---------- styles for sub-navigation dropdown menus ---------- */
 .sub-nav {
   background-color: #ff9933;
   margin: 0;
   padding: 0;
   list-style-type: none;
   position: absolute;
+  display: none;
 }
 
 .sub-nav__link {
   display: inline-block;
   text-decoration: none;
   font-family: "Roboto Condensed", sans-serif;
-  font-weight: 400;
-  color: #e6e6e6;
+  color: white;
   padding: 0.75em 2em;
   width: 100%;
 }
 
 .sub-nav__link:hover {
-  color: #e6e6e6;
+  text-decoration: none;
+  color: white;
   background-color: #ff8000;
-}
-
-.dn {
-  display: none;
 }
 
 .nav__item:hover .sub-nav {
   display: block;
 }
 
-.main {
-  padding: 1em 2em;
+/* ---------- styles for main page ---------- */
+.about-us {
   text-align: justify;
-  line-height: 1.5;
-  min-height: 70vh;
 }
 
 .about-us__image {
@@ -154,15 +138,15 @@ nav {
   width: 20%;
   margin-left: 1em;
   border-radius: 4px;
-  -webkit-box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
 }
 
 .news-meal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 2em;
+  padding-top: 1em;
 }
 
 .news-meal section {
@@ -180,26 +164,10 @@ nav {
           align-items: center;
 }
 
-.news-meal__icon-link {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 / 2;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1 / 2;
-}
-
-.news-meal__icon {
-  width: 24px;
-}
-
 .news-meal__heading {
   -ms-grid-column: 2;
   -ms-grid-column-span: 3;
   grid-column: 2 / 5;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1 / 2;
   -ms-grid-column-align: start;
       justify-self: start;
   margin: 0;
@@ -214,10 +182,15 @@ nav {
   grid-row: 3 / 4;
 }
 
+/* ---------- styles for section O školce - Zájmové zaměření ---------- */
+.interests {
+  text-align: justify;
+}
+
 .interests__image {
   border-radius: 4px;
-  -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
-          box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
 }
 
 .interests__image--left {
@@ -253,75 +226,32 @@ nav {
           transform: scale(1.1);
 }
 
-.day-mode__section {
-  margin-top: 2em;
-}
-
+/* ---------- styles for section O školce - Režim dne ---------- */
 .day-mode__table th {
-  width: 120px;
+  min-width: 120px;
   text-align: center;
-  vertical-align: top;
 }
 
-.day-mode__list {
-  margin-top: 0;
+.day-mode__table tr:hover {
+  background-color: #ffb366;
 }
 
+/* ---------- styles for section O školce - Školní vzdělávací program ---------- */
 .svp__table {
   margin-bottom: 2em;
-}
-
-.svp__table th,
-.svp__table td {
-  border: 1px solid #333333;
-  padding: 0.5em;
   text-align: center;
+}
+
+.svp__table thead {
+  background-color: #ffb366;
+}
+
+.svp__table tbody tr:nth-child(2n) {
+  background-color: #ffe6cc;
+}
+
+.svp__table th {
   width: 16%;
-  height: 64px;
-}
-
-.svp__table tbody tr:nth-child(1) {
-  background-color: #ffb366;
-}
-
-.svp__table tbody tr:nth-child(2) {
-  background-color: #ad661f;
-  color: #e6e6e6;
-}
-
-.svp__table tbody tr:nth-child(3) {
-  background-color: #6c4013;
-  color: #e6e6e6;
-}
-
-.svp__table tbody tr:nth-child(4) {
-  background-color: #13406c;
-  color: #e6e6e6;
-}
-
-.svp__table tbody tr:nth-child(5) {
-  background-color: #1f66ad;
-  color: #e6e6e6;
-}
-
-.svp__table tbody tr:nth-child(6) {
-  background-color: #5299e0;
-}
-
-.svp__table tbody tr:nth-child(7) {
-  background-color: #7de8e8;
-}
-
-.svp__table tbody tr:nth-child(8) {
-  background-color: #b3e87d;
-}
-
-.svp__table tbody tr:nth-child(9) {
-  background-color: #ffff80;
-}
-
-.svp__table tbody tr:nth-child(10) {
-  background-color: #ffb366;
 }
 
 .svp__logos {
@@ -329,7 +259,7 @@ nav {
   margin: 1em 20%;
 }
 
-/* nejsou ty barvy moc bláznivé? */
+/* ---------- styles for section O školce - Úřední dokumenty ---------- */
 .documents {
   display: -ms-grid;
   display: grid;
@@ -350,13 +280,7 @@ nav {
   border-radius: 4px;
   -webkit-box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
           box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
-  padding: 1em;
-}
-
-.documents__reports {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 / 2;
+  padding: 0 1em;
 }
 
 .documents__gdpr {
@@ -374,48 +298,41 @@ nav {
   grid-column: 1 / 3;
 }
 
-.documents__info ol {
-  list-style-type: none;
-  counter-reset: docinfo;
-}
-
 .documents__info--list {
   padding: 0;
 }
 
-.documents__info li {
-  margin: 1em 0;
+.documents__info ol {
+  list-style-type: none;
+  counter-reset: docinfo;
 }
 
 .documents__info li::before {
   counter-increment: docinfo;
   content: counters(docinfo, ".") ". ";
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-weight: 700;
   color: #333333;
 }
 
 .documents__info--list-heading {
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-weight: 700;
   color: #333333;
 }
 
-.documents__info table,
-.documents__info td {
-  border: 1px solid #333333;
-  border-collapse: collapse;
-  padding: 0.5em;
-  height: 40px;
+address {
+  font-style: normal;
 }
 
+/* ---------- styles for section Pro rodiče - Zápis ---------- */
 .enrolment__year, .enrolment__holidays {
   border-radius: 4px;
   -webkit-box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
           box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
-  padding: 1em;
+  padding: 0 1em;
   margin-bottom: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -425,6 +342,19 @@ nav {
 .enrolment__main {
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
+  padding-right: 2em;
+}
+
+.enrolment__aside {
+  -ms-flex-preferred-size: 36%;
+      flex-basis: 36%;
+  padding-left: 2em;
+  margin: 1em 0;
+  border-left: 1px solid grey;
+}
+
+.enrolment__aside h3 {
+  margin: 0.75em 0;
 }
 
 .enrolment__calendar {
@@ -434,35 +364,11 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
   width: 320px;
   border-radius: 4px;
   -webkit-box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
           box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
-  padding: 1em;
-  padding: 0;
   margin: 1em 0;
-}
-
-.enrolment__aside {
-  -ms-flex-preferred-size: 36%;
-      flex-basis: 36%;
-  margin: 3em 0 0 3em;
-  padding-left: 2em;
-  border-left: 1px solid grey;
-  text-align: left;
-}
-
-.enrolment__link {
-  display: block;
-}
-
-.enrolment__holidays table,
-.enrolment__holidays th,
-.enrolment__holidays td {
-  border: 1px solid #333333;
-  border-collapse: collapse;
-  padding: 0 0.5em;
 }
 
 .enrolment__holidays--relevant {
@@ -496,6 +402,7 @@ nav {
   padding: 1em;
 }
 
+/* ---------- styles for section Pro rodiče - Oblečení do MŠ ---------- */
 .clothing-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -509,10 +416,10 @@ nav {
   border-radius: 4px;
   -webkit-box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
           box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
-  padding: 1em;
   -ms-flex-preferred-size: 32%;
       flex-basis: 32%;
-  text-align: left;
+  margin: 1em 0;
+  padding: 1em;
 }
 
 .clothing__type h3 {
@@ -529,30 +436,29 @@ nav {
 }
 
 .clothing__icon {
-  width: 24px;
-  margin: 1em 1em 0 1em;
+  margin: 0 0.5em 1em 0.5em;
 }
 
+/* ---------- styles for section Pro rodiče - Rady rodičům ---------- */
 .advice-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .advice__type {
   border-radius: 4px;
   -webkit-box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
           box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  margin: 1em 0;
   padding: 1em;
-  margin: 1em;
-  -ms-flex-preferred-size: 44%;
-      flex-basis: 44%;
-  text-align: left;
 }
 
 .advice__type h3 {
@@ -569,16 +475,17 @@ nav {
 }
 
 .advice__icon {
-  width: 24px;
-  margin: 1em 1em 0 1em;
+  margin: 0 0.5em 1em 0.5em;
 }
 
-.payment table,
-.payment th,
-.payment td {
-  border: 1px solid #333333;
-  border-collapse: collapse;
-  padding: 0.5em;
+/* ---------- styles for section Pro rodiče - Platby ---------- */
+.payment .table {
+  text-align: center;
+}
+
+.payment__th--wider {
+  max-width: 180px;
+  text-align: left;
 }
 
 .payment th:last-child,
@@ -586,6 +493,13 @@ nav {
   background-color: #ffb366;
 }
 
+@media screen and (min-width: 1080px) {
+  .payment__th--wider {
+    width: auto;
+  }
+}
+
+/* ---------- styles for section Třídy ---------- */
 .classes__links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -599,21 +513,23 @@ nav {
   border-radius: 4px;
   -webkit-box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
           box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
-  padding: 1em;
+  text-decoration: none;
 }
 
 .classes__images {
   width: 100%;
+  padding: 1em;
 }
 
 .classes__names {
   color: #333333;
   font-weight: 600;
   text-transform: uppercase;
-  text-decoration: none;
   text-align: center;
+  padding: 1em;
 }
 
+/* ---------- styles for section Třídy - Broučci, Cvrček, Krteček, Maková panenka, Rákosníček ---------- */
 .class__heading {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -621,14 +537,19 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 1em;
+}
+
+.class__heading h1 {
+  margin: 0;
 }
 
 .class__image {
   width: 60px;
-  margin: 0.5em;
+  margin-right: 0.5em;
 }
 
 .class__content {
@@ -652,7 +573,6 @@ nav {
   -ms-grid-row: 1;
   grid-row: 1;
   border-left: 1px solid grey;
-  text-align: left;
 }
 
 .class__iframe-yt {
@@ -663,9 +583,6 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .password-input {
@@ -685,8 +602,8 @@ nav {
   background-color: #ffb366;
   border: none;
   border-radius: 4px;
-  -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
-          box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
 
@@ -703,6 +620,7 @@ nav {
   color: #333333;
 }
 
+/* ---------- styles for section Kontakty ---------- */
 .contact {
   text-align: center;
 }
@@ -711,24 +629,26 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin-bottom: 3em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact__staff {
+  margin: 2em;
 }
 
 .contact__class {
-  width: 180px;
+  -ms-flex-preferred-size: 16%;
+      flex-basis: 16%;
+  min-width: 200px;
   border-radius: 4px;
   -webkit-box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
           box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
   padding: 0.5em;
-}
-
-.contact__icon {
-  width: 24px;
-  -webkit-transform: translateY(8px);
-          transform: translateY(8px);
+  margin: 1em;
 }
 
 .contact__link {
@@ -736,22 +656,18 @@ nav {
 }
 
 .contact__image {
-  height: 100px;
+  width: 100px;
   display: block;
-  margin: 0.5em auto;
+  margin: 1em auto;
 }
 
 .contact__sub-heading {
-  margin-bottom: 0;
+  margin: 1em 0 0.5em 0;
   font-weight: 600;
 }
 
-.contact__staff {
+.contact__employee {
   margin: 0;
-}
-
-.contact iframe {
-  padding: 1em 0;
 }
 
 .mt {
@@ -760,16 +676,31 @@ nav {
 
 .footer {
   background-color: #ff9933;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.copyright {
-  color: #e6e6e6;
-  display: block;
-  text-align: center;
+.copyright,
+.attribution {
+  color: white;
   padding: 1em;
 }
 
-/* vyřešit, že footer není při krátkém obsahu na větších obrazovkách úplně dole */
+.copyright__link,
+.attribution__link {
+  color: white;
+}
+
+.copyright__link:hover,
+.attribution__link:hover {
+  color: white;
+}
+
+/* ---------- styles for all pages ---------- */
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -780,39 +711,59 @@ html {
           box-sizing: inherit;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
+  min-height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 120px auto 1fr auto;
+      grid-template-rows: 120px auto 1fr auto;
   font-family: "Open Sans", sans-serif;
   color: #333333;
+}
+
+.main {
+  padding: 2em;
+  line-height: 1.5;
 }
 
 /* ---------- generic styles for headings ---------- */
 h1 {
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 1.5em;
+  font-size: 2rem;
   color: #ff9933;
   text-align: center;
 }
 
 h2 {
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 1.3em;
+  font-size: 1.6rem;
   color: #ff9933;
+  margin: 1em 0 0.5em 0;
 }
 
 h3 {
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 1.1em;
+  font-size: 1.2em;
   color: #333333;
-  margin-bottom: 0;
 }
 
 /* ---------- generic styles for links ---------- */
 a {
   color: #ff9933;
+  text-decoration: underline;
 }
 
 a:hover {
   color: #ff8000;
+}
+
+/* ---------- generic styles for icons ---------- */
+.icon {
+  width: 24px;
 }
 /*# sourceMappingURL=styles.css.map */

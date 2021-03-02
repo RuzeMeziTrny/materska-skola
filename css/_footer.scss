@@ -1,12 +1,19 @@
 .footer {
   background-color: $color-primary;
+  display: flex;
+  justify-content: space-between;
 }
 
-.copyright {
-  color: $color-light;
-  display: block;
-  text-align: center;
+.copyright,
+.attribution {
+  color: hsl(0, 0%, 100%);
   padding: 1em;
-}
 
-/* vyřešit, že footer není při krátkém obsahu na větších obrazovkách úplně dole */
+  &__link {
+    color: hsl(0, 0%, 100%);
+
+    &:hover {
+      color: hsl(0, 0%, 100%);
+    }
+  }
+}

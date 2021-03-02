@@ -1,14 +1,14 @@
+/* ---------- styles for header (school logo, classes images, contact details) ---------- */
+
 .header {
   display: grid;
   grid-template-columns: 120px 1fr 1fr 240px;
   justify-items: center;
-  height: 120px;
 }
 
 .logo-link {
   width: 100px;
   margin: auto;
-  grid-column: 1 / 2;
 }
 
 .logo {
@@ -23,29 +23,22 @@
   align-items: center;
   
   img {
-    height: 88px;
+    width: 100px;
   }
 }
 
 .contact-details {
-  grid-column: 4 / 5;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 
-  &__icon {
-    width: 24px;
-    transform: translateY(25%);
-    // šlo by přebarvit svg loga na primární barvu?
-  }
-
   &__email {
     color: $color-dark;
-    margin: 0.5em;
+    padding: 0.5em;
   }
 
   &__address {
-    display: inline-block;
-    margin: 0.5em;
+    display: inline;
+    padding: 0.5em;
   }
 }

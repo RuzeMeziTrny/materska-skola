@@ -1,48 +1,40 @@
+/* ---------- styles for section Pro rodiče - Zápis ---------- */
+
 .enrolment {
   
   &__year,
   &__holidays {
     @include shadow-box;
+    padding: 0 1em;
     margin-bottom: 1em;
     display: flex;
   }
 
   &__main {
     flex-basis: 60%;
+    padding-right: 2em;
+  }
+
+  &__aside {
+    flex-basis: 36%;
+    padding-left: 2em;
+    margin: 1em 0;
+    border-left: 1px solid grey;
+
+    h3 {
+      margin: 0.75em 0;
+    }
   }
 
   &__calendar {
     display: flex;
     align-items: center;
-    text-align: center;
     width: 320px;
     @include shadow-box;
-    padding: 0;
     margin: 1em 0;
   }
 
-  &__aside {
-    flex-basis: 36%;
-    margin: 3em 0 0 3em;
-    padding-left: 2em;
-    border-left: 1px solid grey;
-    text-align: left;
-  }
-
-  &__link {
-    display: block;
-  }
-
   &__holidays {
-
-    table,
-    th,
-    td {
-      border: 1px solid $color-dark;
-      border-collapse: collapse;
-      padding: 0 0.5em;
-    }
-
     &--relevant {
       background-color: $color-primary-light;
     }
@@ -76,6 +68,8 @@
   }
 }
 
+/* ---------- styles for section Pro rodiče - Oblečení do MŠ ---------- */
+
 .clothing {
   &-container {
     display: flex;
@@ -85,7 +79,8 @@
   &__type {
     @include shadow-box;
     flex-basis: 32%;
-    text-align: left;
+    margin: 1em 0;
+    padding: 1em;
 
     h3 {
       text-align: center;
@@ -98,23 +93,25 @@
   }
 
   &__icon {
-    width: 24px;
-    margin: 1em 1em 0 1em;
+    margin: 0 0.5em 1em 0.5em;
   }
 }
+
+/* ---------- styles for section Pro rodiče - Rady rodičům ---------- */
+
 
 .advice {
   &-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   &__type {
     @include shadow-box;
-    margin: 1em;
-    flex-basis: 44%;
-    text-align: left;
+    flex-basis: 48%;
+    margin: 1em 0;
+    padding: 1em;
 
     h3 {
       text-align: center;
@@ -127,22 +124,32 @@
   }
 
   &__icon {
-    width: 24px;
-    margin: 1em 1em 0 1em;
+    margin: 0 0.5em 1em 0.5em;
   }
 }
 
+/* ---------- styles for section Pro rodiče - Platby ---------- */
+
 .payment {
-  table,
-  th,
-  td {
-    border: 1px solid $color-dark;
-    border-collapse: collapse;
-    padding: 0.5em;
+  .table {
+    text-align: center;
   }
 
+  &__th--wider {
+    max-width: 180px;
+    text-align: left;
+  }
+  
   th:last-child, 
   td:last-child {
     background-color: $color-primary-light;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .payment {
+    &__th--wider {
+      width: auto;
+    }
   }
 }

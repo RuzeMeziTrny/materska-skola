@@ -1,8 +1,8 @@
+/* ---------- styles for navigation bar ---------- */
+
 nav {
-  position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
-  z-index: 1;
 }
 
 .nav {
@@ -19,15 +19,18 @@ nav {
     text-transform: uppercase;
     font-family: $font-headings;
     font-weight: 700;
-    color: $color-light;
+    color: hsl(0, 0%, 100%);
     padding: 1em 2em;
 
     &:hover {
-      color: $color-light;
+      text-decoration: none;
+      color: hsl(0, 0%, 100%);
       background-color: $color-primary-dark;
     }
   }
 }
+
+/* ---------- styles for sub-navigation dropdown menus ---------- */
 
 .sub-nav {
   background-color: $color-primary;
@@ -35,25 +38,22 @@ nav {
   padding: 0;
   list-style-type: none;
   position: absolute;
+  display: none;
 
   &__link {
     display: inline-block;
     text-decoration: none;
     font-family: $font-headings;
-    font-weight: 400;
-    color: $color-light;
+    color: hsl(0, 0%, 100%);
     padding: 0.75em 2em;
     width: 100%;
   
     &:hover {
-    color: $color-light;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
     background-color: $color-primary-dark;
     }
   }
-}
-
-.dn {
-  display: none;
 }
 
 .nav__item:hover .sub-nav {
